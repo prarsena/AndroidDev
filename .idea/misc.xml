@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Sandbox/AndroidStudioProjects/Assignments/AndroidDev/app/src/main/res/drawable/gradient_background.xml" value="0.169" />
+        <entry key="..\:/Sandbox/AndroidStudioProjects/Assignments/AndroidDev/app/src/main/res/font/abril_fatface.xml" value="0.396875" />
+        <entry key="..\:/Sandbox/AndroidStudioProjects/Assignments/AndroidDev/app/src/main/res/layout/main.xml" value="0.25" />
         <entry key="..\:/Sandbox/AndroidStudioProjects/Assignments/assignment01/app/src/main/res/layout/main.xml" value="0.4" />
       </map>
     </option>

@@ -2,24 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9475A1"
+    android:background="@drawable/gradient_background"
     android:orientation="vertical">
-
-    <TextClock
-        android:layout_width="wrap_content"
-        android:layout_height="50dip"
-        android:layout_gravity="center_horizontal"
-        android:format12Hour="EEE MMM dd h:mm:ss aa zzz yyyy"
-        android:textColor="#ff0000ff"
-        android:timeZone="EST" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        android:background="@color/item_background"
+
+        android:fontFamily="@font/abril_fatface"
         android:gravity="center"
         android:text="@string/tip"
-        android:textColor="#FF00FF00"
-        android:textSize="20sp" />
+        android:textColor="@color/item_font"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,19 +24,27 @@
 
         <TextView
             android:id="@+id/checkAmount"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".50"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/item_background"
+            android:gravity="center"
             android:text="Check Amount"
-            android:background="#55ee44"
-            android:textColor="#ffee11EE"/>
+            android:fontFamily="@font/abril_fatface"
+            android:textColor="@color/item_font"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/mealprice"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
-            android:inputType="text">
+            android:layout_weight="1"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:layout_marginRight="10dp">
             <requestFocus />
         </EditText>
     </LinearLayout>
@@ -52,18 +56,26 @@
 
         <TextView
             android:id="@+id/diners"
-            android:layout_width="match_parent"
+            android:text="Number of People"
+            android:layout_width="0dp"
+            android:textSize="20sp"
             android:layout_height="wrap_content"
-            android:layout_weight=".50"
-            android:text="No. of People"
-            android:textColor="#FFFF0000"
-            android:background="#11ffee"/>
+            android:layout_weight="1"
+            android:fontFamily="@font/abril_fatface"
+            android:background="@color/item_background"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:layout_marginLeft="10dp" />
         <EditText
             android:id="@+id/dinersAnswer"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
-            android:inputType="text">
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:inputType="text"
+            android:layout_marginRight="10dp">
             <requestFocus />
         </EditText>
     </LinearLayout>
@@ -74,105 +86,141 @@
 
         <TextView
             android:id="@+id/tipPercentage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".50"
             android:text="Tip Percentage"
-            android:textColor="#FFFFFFFF"
-            android:background="#dd2366"/>
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abril_fatface"
+            android:background="@color/item_background"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:layout_marginLeft="10dp" />
         <EditText
             android:id="@+id/tipPercentageAnswer"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
-            android:inputType="text">
+            android:layout_weight="1"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:layout_marginRight="10dp">
             <requestFocus />
         </EditText>
     </LinearLayout>
     <Button
         android:id="@+id/calculate"
+        android:text="Go!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go!"
-        android:textColor="#FFFF0000" />
+        android:layout_margin="15dp"
+        android:fontFamily="@font/sonsie_one"
+        android:background="@color/item_background"
+        android:textColor="@color/item_font" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/totalBill"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".25"
             android:text="Total Bill"
-            android:textColor="#FFFFFFFF"
-            android:background="#dd2366"/>
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/abril_fatface"
+            android:background="@color/item_background"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+           />
 
         <TextView
             android:id="@+id/totalBillAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
             android:text=""
-            android:textColor="#FFF"/>
+            android:textColor="@color/item_font" />
 
         <TextView
             android:id="@+id/totalPerPerson"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".25"
             android:text="Total Per Person"
-            android:textColor="#FFFFFFFF"
-            android:background="#dd2366"/>
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abril_fatface"
+            android:background="@color/item_background"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"/>
 
         <TextView
             android:id="@+id/totalPerPersonAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text=""
-            android:textColor="#FFF"/>
+            android:textColor="@color/item_font" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/totalTip"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".25"
             android:text="Total Tip"
-            android:textColor="#FFFFFFFF"
-            android:background="#dd2366"/>
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/abril_fatface"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/item_background"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"/>
 
         <TextView
             android:id="@+id/totalTipAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text=""
+            android:gravity="center"
             android:textColor="#FFF"/>
 
         <TextView
             android:id="@+id/tipPerPerson"
-            android:layout_width="match_parent"
+            android:text=" Tip Per Person"
+            android:layout_width="0dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/abril_fatface"
             android:layout_height="wrap_content"
-            android:layout_weight=".25"
-            android:text="Tip Per Person"
-            android:textColor="#FFFFFFFF"
-            android:background="#dd2366"/>
+            android:layout_weight="1"
+            android:background="@color/item_background"
+            android:textColor="@color/item_font"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"/>
 
         <TextView
             android:id="@+id/tipPerPersonAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text=""
-            android:textColor="#FFF"/>
+            android:gravity="center"
+            android:textColor="@color/item_font" />
     </LinearLayout>
 
 </LinearLayout>

@@ -71,6 +71,12 @@ public class TipCalc extends Activity implements OnClickListener {
 			if (mealprice.contains("$"))
 					mealprice = mealprice.substring(1);
 
+			if(tipPercent.contains("%"))
+				tipPercent = tipPercent.substring(0,(tipPercent.length()-1));
+
+			if(tipPercent.isEmpty())
+				tipPercent = "15";
+
 			float fmp = Float.parseFloat(mealprice);
 			int diners = Integer.parseInt(numberOfDiners);
 			int tip = Integer.parseInt(tipPercent);
