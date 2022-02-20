@@ -1,5 +1,6 @@
 /*
- * Enter dinner bill and a 20% tip is calculated.
+ * Enter dinner bill, number of diners, and a tip is calculated (or, leave blank and 15% tip is calculated).
+ * Program outputs the bill total, tip total, and amounts per person. 
  * This example uses a listener implemented by the Activity class.
  * Another alternative is using an anonymous class.
  */
@@ -16,14 +17,14 @@ import android.view.View.OnClickListener;
 
 public class TipCalc extends Activity implements OnClickListener {
 
-	/* The user inputs */
+	/* Define the user inputs */
 	private EditText mealpricefield;
 	private EditText dinersAnswer;
 	private EditText tipPercentageAnswer;
 
 	private Button button;
 
-	/* The outputs to the TextView fields */
+	/* Define the outputs to the TextView fields */
 	private TextView totalBillAnswer;
 	private TextView totalPerPersonAnswer;
 	private TextView totalTipAnswer;
@@ -35,12 +36,15 @@ public class TipCalc extends Activity implements OnClickListener {
 	@Override
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
+		/* Set view name as main from res/layout */
 		setContentView(R.layout.main);
 
+		/* Set the contents of the EditText elements to the user input variables created above. */
 		mealpricefield = (EditText) findViewById(R.id.mealprice);
 		dinersAnswer = (EditText) findViewById(R.id.dinersAnswer);
 		tipPercentageAnswer = (EditText) findViewById(R.id.tipPercentageAnswer);
 
+		/* Set the contents of the TextView elements to the output variables created above. */
 		totalBillAnswer = (TextView) findViewById(R.id.totalBillAnswer);
 		totalPerPersonAnswer = (TextView) findViewById(R.id.totalPerPersonAnswer);
 		totalTipAnswer = (TextView) findViewById(R.id.totalTipAnswer);

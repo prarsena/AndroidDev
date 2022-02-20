@@ -11,7 +11,7 @@
         android:layout_margin="15dp"
         android:background="@color/item_background"
 
-        android:fontFamily="@font/abril_fatface"
+        android:fontFamily="casual"
         android:gravity="center"
         android:text="@string/tip"
         android:textColor="@color/item_font"
@@ -29,9 +29,9 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@color/item_background"
+            android:fontFamily="casual"
             android:gravity="center"
             android:text="Check Amount"
-            android:fontFamily="@font/abril_fatface"
             android:textColor="@color/item_font"
             android:textSize="20sp" />
 
@@ -61,7 +61,7 @@
             android:textSize="20sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/abril_fatface"
+            android:fontFamily="casual"
             android:background="@color/item_background"
             android:textColor="@color/item_font"
             android:gravity="center"
@@ -91,7 +91,7 @@
             android:textSize="20sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/abril_fatface"
+            android:fontFamily="casual"
             android:background="@color/item_background"
             android:textColor="@color/item_font"
             android:gravity="center"
@@ -109,14 +109,15 @@
             <requestFocus />
         </EditText>
     </LinearLayout>
+
     <Button
         android:id="@+id/calculate"
-        android:text="Go!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:fontFamily="@font/sonsie_one"
         android:background="@color/item_background"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Go!"
         android:textColor="@color/item_font" />
 
     <LinearLayout
@@ -133,7 +134,7 @@
             android:textSize="15sp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:fontFamily="@font/abril_fatface"
+            android:fontFamily="casual"
             android:background="@color/item_background"
             android:textColor="@color/item_font"
             android:gravity="center"
@@ -156,7 +157,7 @@
             android:textSize="15sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/abril_fatface"
+            android:fontFamily="casual"
             android:background="@color/item_background"
             android:textColor="@color/item_font"
             android:gravity="center"
@@ -183,7 +184,7 @@
             android:text="Total Tip"
             android:layout_width="0dp"
             android:textSize="15sp"
-            android:fontFamily="@font/abril_fatface"
+            android:fontFamily="casual"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/item_background"
@@ -202,16 +203,16 @@
 
         <TextView
             android:id="@+id/tipPerPerson"
-            android:text=" Tip Per Person"
             android:layout_width="0dp"
-            android:textSize="15sp"
-            android:fontFamily="@font/abril_fatface"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@color/item_background"
-            android:textColor="@color/item_font"
+            android:fontFamily="casual"
             android:gravity="center"
-            android:layout_marginLeft="10dp"/>
+            android:text=" Tip Per Person"
+            android:textColor="@color/item_font"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tipPerPersonAnswer"
