@@ -11,7 +11,7 @@
         android:layout_margin="15dp"
         android:background="@color/item_background"
 
-        android:fontFamily="casual"
+        android:fontFamily="@font/audiowide"
         android:gravity="center"
         android:text="@string/tip"
         android:textColor="@color/item_font"
@@ -29,7 +29,7 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:background="@color/item_background"
-            android:fontFamily="casual"
+            android:fontFamily="@font/balsamiq_sans"
             android:gravity="center"
             android:text="Check Amount"
             android:textColor="@color/item_font"
@@ -61,7 +61,7 @@
             android:textSize="20sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="casual"
+            android:fontFamily="@font/balsamiq_sans"
             android:background="@color/item_background"
             android:textColor="@color/item_font"
             android:gravity="center"
@@ -91,7 +91,7 @@
             android:textSize="20sp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="casual"
+            android:fontFamily="@font/balsamiq_sans"
             android:background="@color/item_background"
             android:textColor="@color/item_font"
             android:gravity="center"
@@ -109,20 +109,36 @@
             <requestFocus />
         </EditText>
     </LinearLayout>
-
-    <Button
-        android:id="@+id/calculate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:background="@color/item_background"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Go!"
-        android:textColor="@color/item_font" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calculate"
+            style="@style/buttonStyle"
+            android:text="TIP!"  />
+
+        <Button
+            android:id="@+id/web"
+            style="@style/buttonStyle"
+            android:text="WEB" />
+
+        <Button
+            android:id="@+id/dial"
+            style="@style/buttonStyle"
+            android:text="DIAL" />
+
+        <Button
+            android:id="@+id/map"
+            style="@style/buttonStyle"
+            android:text="MAP" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:weightSum="4"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
@@ -130,15 +146,8 @@
         <TextView
             android:id="@+id/totalBill"
             android:text="Total Bill"
-            android:layout_width="0dp"
-            android:textSize="15sp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="casual"
-            android:background="@color/item_background"
-            android:textColor="@color/item_font"
-            android:gravity="center"
-            android:layout_marginLeft="10dp"
+            style="@style/resultStyle"
            />
 
         <TextView
@@ -150,18 +159,43 @@
             android:text=""
             android:textColor="@color/item_font" />
 
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalTip"
+            android:text="Total Tip"
+            android:layout_height="match_parent"
+            style="@style/resultStyle" />
+
+        <TextView
+            android:id="@+id/totalTipAnswer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#FFF"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="4"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
         <TextView
             android:id="@+id/totalPerPerson"
             android:text="Total Per Person"
-            android:layout_width="0dp"
-            android:textSize="15sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="casual"
-            android:background="@color/item_background"
-            android:textColor="@color/item_font"
-            android:gravity="center"
-            android:layout_marginLeft="10dp"/>
+            android:layout_height="match_parent"
+            style="@style/resultStyle"/>
 
         <TextView
             android:id="@+id/totalPerPersonAnswer"
@@ -174,45 +208,15 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:weightSum="4"
         android:layout_marginTop="10dp"
         android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/totalTip"
-            android:text="Total Tip"
-            android:layout_width="0dp"
-            android:textSize="15sp"
-            android:fontFamily="casual"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/item_background"
-            android:textColor="@color/item_font"
-            android:gravity="center"
-            android:layout_marginLeft="10dp"/>
-
-        <TextView
-            android:id="@+id/totalTipAnswer"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text=""
-            android:gravity="center"
-            android:textColor="#FFF"/>
-
         <TextView
             android:id="@+id/tipPerPerson"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:background="@color/item_background"
-            android:fontFamily="casual"
-            android:gravity="center"
+            android:layout_height="match_parent"
             android:text=" Tip Per Person"
-            android:textColor="@color/item_font"
-            android:textSize="15sp" />
+            style="@style/resultStyle" />
 
         <TextView
             android:id="@+id/tipPerPersonAnswer"

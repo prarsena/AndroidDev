@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <style name="buttonStyle">
+        <item name="android:textColor">@color/item_font</item>
+        <item name="android:background">@color/item_background</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/andada</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="resultStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/balsamiq_sans</item>
+        <item name="android:background">@color/textview_bg</item>
+        <item name="android:textColor">@color/item_font</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+</resources>

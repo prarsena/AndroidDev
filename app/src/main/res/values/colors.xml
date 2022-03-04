@@ -13,5 +13,6 @@
 
     <color name="item_background">#795DA1</color>
     <color name="item_font">#FFFCDD</color>
+    <color name="textview_bg">#695E7A</color>
 
 </resources>
